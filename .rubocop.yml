@@ -1,0 +1,6 @@
+inherit_from: ~/.rubocop.yml
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+  AutoCorrect: true
