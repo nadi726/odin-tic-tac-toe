@@ -33,6 +33,8 @@ class Board
   end
 
   def valid?(pos)
+    return false if pos.row.negative? || pos.col.negative?
+
     @board.dig(pos.row, pos.col) == '-'
   end
 
