@@ -48,10 +48,10 @@ class Game
   end
 
   def check_game_end(player)
-    if @board.full?
-      :tie
-    elsif @board.win?(player.symbol)
+    if @board.win?(player.symbol)
       player
+    elsif @board.full?
+      :tie
     end
   end
 
